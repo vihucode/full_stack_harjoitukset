@@ -1,0 +1,4 @@
+Tehtävä 0.6 uusi note spa
+
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+palvelin-->selain: {content: ":)", date: "2022-11-09T12:23:05.432Z"}

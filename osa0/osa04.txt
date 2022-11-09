@@ -14,3 +14,8 @@ end note
 
 selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
 palvelin-->selain: [{content: 'HTML is easy', date: '2019-05-23T17:30:31.098Z'}, ...]
+
+note over selain:
+selain suorittaa tapahtumankäsittelijän
+joka renderöi muistiinpanot näytölle
+end note

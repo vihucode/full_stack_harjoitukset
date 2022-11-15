@@ -69,8 +69,6 @@ const App = () => {
   const rdanec = () => setSelected(randomNumber(selected))
   const addPoint = () => addPoints(adder(pointList, selected))
   
-  console.log(pointList)
-  console.log(pointList.indexOf(Math.max(...pointList)))
   return (
     <div>
       <h1>Anecdote of the day</h1>

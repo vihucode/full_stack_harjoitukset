@@ -1,7 +1,4 @@
-
-
 const AddForm = (props) => {
-    console.log('kalle')
     return (
         <form onSubmit={props.onSubmit}>
             <div >

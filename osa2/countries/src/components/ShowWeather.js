@@ -15,7 +15,7 @@ const ShowWeather = (props) => {
 
     useEffect(() => {
         axios
-          .get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${api_key}`)
+          .get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=9392925bba9bc605d88e26dc93d83c32`)
           .then(response => {
             setWeather(response.data);
             if (response.data.main && response.data.main.temp) {

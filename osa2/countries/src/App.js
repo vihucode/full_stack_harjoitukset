@@ -33,9 +33,7 @@ const App = () => {
       < ShowCountry
        newList={newList}
        newSearch={newSearch} 
-       countries={countries} 
-       handleSearchChange={handleSearchChange}
-       setSearch={setSearch} />    
+       countries={countries} />    
     </div>
   )
 

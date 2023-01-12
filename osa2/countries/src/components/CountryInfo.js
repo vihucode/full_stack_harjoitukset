@@ -1,6 +1,8 @@
 import Languages from './Languages'
+import ShowWeather from './ShowWeather'
 
 const CountryInfo = (props) => {
+    
     return(
         props.countries.filter(country => country.name.common.toLowerCase().includes(props.lower)).map(country =>
             <div key={country.name}>
@@ -11,6 +13,7 @@ const CountryInfo = (props) => {
             <Languages country={country}/> <br />
             <img src= {country.flags['png']} style={{width: 200, height: 150}}/>
             <h2>Weather in {country.capital}</h2>
+            < ShowWeather country={country} />
             </div>)
     )
 } 

@@ -7,10 +7,7 @@ import Filter from './components/Filter'
 
 const App = () => {
   const [countries, setCountries] = useState([]) 
-  const [weather, setWeather] = useState([]) 
   const [newSearch, setSearch] = useState('')
-
-  const api_key = process.env.REACT_APP_API_KEY
 
   useEffect(() => {
     console.log('effect')
@@ -22,18 +19,6 @@ const App = () => {
       })
   }, [])
   console.log('render', countries.length, 'countries')
-
-  useEffect(() => {
-    console.log('effect')
-    axios
-      .get('https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid=9392925bba9bc605d88e26dc93d83c32')
-      .then(response => {
-        console.log('promise fulfilled')
-        setWeather(response.data)
-      })
-  }, [])
-  console.log('render', weather.length, 'weathers')
-  
 
   const handleSearchChange = (event) => {
     console.log(event.target.value)
@@ -50,7 +35,7 @@ const App = () => {
        newSearch={newSearch} 
        countries={countries} 
        handleSearchChange={handleSearchChange}
-       setSearch={setSearch} />
+       setSearch={setSearch} />    
     </div>
   )
 
